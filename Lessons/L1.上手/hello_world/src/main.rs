@@ -6,7 +6,7 @@ use std::io::stdin;
 
 // 全局作用域
 
-// fn main 是 binary-create 的入口
+// fn main 是 binary-crate 的入口
 fn main() {
     let mut msg = String::new(); // ; 用于结束语句
     println!("Please enter message:");

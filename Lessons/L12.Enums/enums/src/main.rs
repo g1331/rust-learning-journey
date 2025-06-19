@@ -61,6 +61,18 @@ fn main() {
     if let Some(max) = config_max {
         println!("max is {}", max);
     }
+    
+    #[derive(Debug)]
+    enum Either{
+        Left(usize),
+        Right(String)
+    }
+    let x = Either::Right(String::from("Hello world"));
+    let value = match &x {
+        Either::Left(n) => {n}
+        Either::Right(s) => &{ s.len() }
+    };
+    println!("{x:?} {value}");
 }
 
 fn easy_way() {

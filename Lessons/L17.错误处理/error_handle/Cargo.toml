@@ -1,0 +1,10 @@
+[package]
+name = "error_handle"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+
+#[profile.release]
+#panic = "abort"  # 会让二进制文件更小一些，因为此时不会进行清理操作
